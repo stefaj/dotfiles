@@ -9,6 +9,9 @@ Install necessary apps
 pacman -S i3 conky feh rxvt-unicode ttf-droid terminus-font
 ```
 
+---
+
+
 ## Installation notes
 
 `.Xresources` goes to `~/.Xresources`
@@ -23,5 +26,4 @@ xrdb -merge ~/.Xresources`
 `zixpk.jpg` can go to the home directory `~/zixpk.jpg`
 Just update the path as necessary in `~/.i3/config`
 
----
 
