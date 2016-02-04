@@ -18,7 +18,8 @@ set $mod Mod4
 #font pango:DejaVu Sans Mono 8
 font pango:droid sans 10
 
-client.focused #000000 #000000 #FFFFFF
+client.focused          #000000 #007fff #000000 #000000
+#client.focused #000000 #000000 #FFFFFF
 #client.focused                #1793D0    #1793D0    #FFFFFF
 #client.focused_inactive    #333333    #333333    #999999
 #client.unfocused            #333333    #333333    #999999
@@ -125,7 +126,7 @@ bindsym $mod+1 workspace 1:main
 bindsym $mod+2 workspace 2:www
 bindsym $mod+3 workspace 3:console
 bindsym $mod+4 workspace 4:code
-bindsym $mod+5 workspace 5:steam
+bindsym $mod+5 workspace 5:ent
 bindsym $mod+6 workspace 6:chat
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
@@ -139,7 +140,7 @@ bindsym $mod+Shift+1 move container to workspace 1:main
 bindsym $mod+Shift+2 move container to workspace 2:www
 bindsym $mod+Shift+3 move container to workspace 3:console
 bindsym $mod+Shift+4 move container to workspace 4:code
-bindsym $mod+Shift+5 move container to workspace 5:steam
+bindsym $mod+Shift+5 move container to workspace 5:ent
 bindsym $mod+Shift+6 move container to workspace 6:chat
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
@@ -192,18 +193,26 @@ bar {
             statusline #999999
 
             # <workclass>       <border> <bg> <text>
-            focused_workspace   #da2263 #d70a53 #ffffff
+            focused_workspace   #118fff #007fff #ffffff
             active_workspace    #565656 #444444 #ffffff
             inactive_workspace  #373737 #222222 #888888
             urgent_workspace    #ec7ea4 #eb709b #ffffff
         }
 }
 
-assign [class="Steam"] 5:steam
+# assign [class="Steam"] 5:ent
 assign [class="Google-chrome-stable"] 2:www
 
-exec --no-startup-id feh --bg-scale ~/Pictures/zixpk.jpg
+exec --no-startup-id feh --bg-scale ~/dark.jpg
 #exec --no-startup-id i3-msg 'workspace 2:www; exec google-chrome-stable'
 exec --no-startup-id i3-msg 'workspace 3:console; exec urxvt'
-# exec --no-startup-id i3-msg 'workspace 5:steam; exec steam'
+# exec --no-startup-id i3-msg 'workspace 5:ent; exec steam'
 exec --no-startup-id i3-msg 'workspace 1:main'
+
+for_window [class="^.*"] border pixel 2
+gaps inner 10
+gaps outer 20
+smart_gaps on
+smart_borders on
+new_window pixel 2
+
