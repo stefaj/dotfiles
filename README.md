@@ -9,6 +9,10 @@ Install necessary apps
 pacman -S i3 conky feh rxvt-unicode ttf-droid terminus-font
 ```
 
+```
+yaourt -S dmenu2
+```
+
 ---
 
 
