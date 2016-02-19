@@ -10,7 +10,7 @@ pacman -S i3 conky feh rxvt-unicode ttf-droid terminus-font perl-anyevent-i3 0.1
 ```
 
 ```
-yaourt -S dmenu2 lemonbar powerline-fonts-git python-i3-git
+yaourt -S dmenu2 lemonbar powerline-fonts-git python-i3-git unclutter-xfixes-git
 ```
 
 ---
