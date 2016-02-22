@@ -37,6 +37,7 @@ then
 xset fp+ $HOME/.fonts/misc
 xset fp+ $HOME/.fonts/ohsnap
 xset fp+ $HOME/.fonts/terminesspowerline
+fc-cache -vf
 ```
 
 Install vim plugins
