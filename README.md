@@ -6,7 +6,7 @@ My personal i3 configuration
 Install necessary apps
 
 ```
-pacman -S i3 conky feh rxvt-unicode ttf-droid terminus-font perl-anyevent-i3 0.16-2 
+pacman -S i3 conky feh rxvt-unicode ttf-droid terminus-font perl-anyevent-i3 0.16-2 compton
 ```
 
 ```
@@ -37,6 +37,7 @@ then
 xset fp+ $HOME/.fonts/misc
 xset fp+ $HOME/.fonts/ohsnap
 xset fp+ $HOME/.fonts/terminesspowerline
+fc-cache -vf
 ```
 
 Install vim plugins
