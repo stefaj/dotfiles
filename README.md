@@ -49,6 +49,13 @@ $ vim +PluginInstall +qall
 ```
 
 ## VIM and haskell
+Install pathogen
+```
+yaourt -S vim-pathogen
+```
+
+
+
 ```
 cd ~/.vim/bundle
 git clone https://github.com/eagletmt/ghcmod-vim.git
