@@ -67,7 +67,10 @@ vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
 set laststatus=2
 
-syntax on
+colorscheme hybrid_reverse
 set background=dark
-colorscheme hybrid
+hi Normal ctermbg=none
+let g:airline_theme = "hybrid"
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
 let g:airline#extensions#tabline#enabled = 1
