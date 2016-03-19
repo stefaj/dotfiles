@@ -1,7 +1,9 @@
-# i3config
-My personal i3 configuration
+# Dot Files
+Dot Files
 
-## Install script
+## I3
+i3 configuration
+### Install script
 
 Install necessary apps
 
@@ -16,7 +18,7 @@ yaourt -S dmenu2 lemonbar powerline-fonts-git python-i3-git unclutter-xfixes-git
 ---
 
 
-## Installation notes
+### Installation notes
 
 `.Xresources` goes to `~/.Xresources`
 ```
@@ -46,3 +48,30 @@ $ git clone https://github.com/gmarik/Vundle.git ~/.vim/bundle/Vundle.vim
 $ vim +PluginInstall +qall
 ```
 
+## VIM and haskell
+Install pathogen
+```
+yaourt -S vim-pathogen
+```
+
+
+
+```
+cd ~/.vim/bundle
+git clone https://github.com/eagletmt/ghcmod-vim.git
+git clone https://github.com/eagletmt/neco-ghc
+git clone https://github.com/ctrlpvim/ctrlp.vim.git
+git clone https://github.com/scrooloose/syntastic.git
+git clone https://github.com/tomtom/tlib_vim.git
+git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
+git clone https://github.com/garbas/vim-snipmate.git
+git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/scrooloose/nerdcommenter.git
+git clone https://github.com/godlygeek/tabular.git
+git clone https://github.com/ervandew/supertab.git
+git clone https://github.com/Shougo/neocomplete.vim.git
+git clone https://github.com/Shougo/vimproc.vim.git
+cd vimproc.vim
+make
+cabal install ghc-mod hlint
+```
