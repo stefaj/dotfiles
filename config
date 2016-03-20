@@ -123,30 +123,30 @@ bindsym $mod+y focus parent
 bindsym $mod+t focus child
 
 # switch to workspace
-bindsym $mod+1 workspace α
-bindsym $mod+2 workspace β
-bindsym $mod+3 workspace γ
-bindsym $mod+4 workspace δ
-bindsym $mod+5 workspace ε
-bindsym $mod+6 workspace ζ
-bindsym $mod+7 workspace η
-bindsym $mod+8 workspace π
-bindsym $mod+9 workspace λ
-bindsym $mod+0 workspace μ
+bindsym $mod+1 workspace 1:α
+bindsym $mod+2 workspace 2:β
+bindsym $mod+3 workspace 3:γ
+bindsym $mod+4 workspace 4:δ
+bindsym $mod+5 workspace 5:ε
+bindsym $mod+6 workspace 6:ζ
+bindsym $mod+7 workspace 7:η
+bindsym $mod+8 workspace 8:π
+bindsym $mod+9 workspace 9:λ
+bindsym $mod+0 workspace 0:μ
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace α
-bindsym $mod+Shift+2 move container to workspace β
-bindsym $mod+Shift+3 move container to workspace γ
-bindsym $mod+Shift+4 move container to workspace δ
-bindsym $mod+Shift+5 move container to workspace ε
-bindsym $mod+Shift+6 move container to workspace ζ
-bindsym $mod+Shift+7 move container to workspace η
-bindsym $mod+Shift+8 move container to workspace π
-bindsym $mod+Shift+9 move container to workspace λ
-bindsym $mod+Shift+0 move container to workspace μ
+bindsym $mod+Shift+1 move container to workspace 1:α
+bindsym $mod+Shift+2 move container to workspace 2:β
+bindsym $mod+Shift+3 move container to workspace 3:γ
+bindsym $mod+Shift+4 move container to workspace 4:δ
+bindsym $mod+Shift+5 move container to workspace 5:ε
+bindsym $mod+Shift+6 move container to workspace 6:ζ
+bindsym $mod+Shift+7 move container to workspace 7:η
+bindsym $mod+Shift+8 move container to workspace 8:π
+bindsym $mod+Shift+9 move container to workspace 9:λ
+bindsym $mod+Shift+0 move container to workspace 0:μ
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -190,6 +190,7 @@ bar {
 #	i3bar_command /home/stefan/.i3/lemonbar/i3_lemonbar.sh
 	i3bar_command i3bar -t
 #	status_command $HOME/bin/conky-i3bar
+        strip_workspace_numbers yes
         position bottom
         colors {
             # <bar>
