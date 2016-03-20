@@ -207,14 +207,11 @@ bar {
 
 }
 
-# assign [class="Steam"] 5:ent
-assign [class="chromium"] β
+assign [class="chromium"] 2:β
 
 exec --no-startup-id feh --bg-scale ~/75023.jpg
-#exec --no-startup-id i3-msg 'workspace 2:www; exec google-chrome-stable'
-exec --no-startup-id i3-msg 'workspace γ; exec urxvt'
-# exec --no-startup-id i3-msg 'workspace 5:ent; exec steam'
-exec --no-startup-id i3-msg 'workspace α'
+exec --no-startup-id i3-msg 'workspace 3:γ; exec urxvt'
+exec --no-startup-id i3-msg 'workspace 1:α'
 
 for_window [class="^.*"] border pixel 1
 gaps inner 10
