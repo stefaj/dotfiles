@@ -14,7 +14,7 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 set incsearch
-set mouse=a
+set mouse=v
 set history=1000
 set clipboard=unnamedplus,autoselect
 
