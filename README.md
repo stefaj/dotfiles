@@ -1,6 +1,11 @@
 # Dot Files
 Dot Files
 
+![Screenshot](screenshot.png "Screenshot")
+
+
+
+
 ## I3
 i3 configuration
 ### Install script
