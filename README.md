@@ -1,6 +1,7 @@
 # Dot Files
-Dot Files
+Dot Files - i3 config and vim
 
+*Preview:*
 ![Screenshot](screenshot.png "Screenshot")
 
 ## Packer
