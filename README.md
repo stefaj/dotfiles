@@ -3,8 +3,18 @@ Dot Files
 
 ![Screenshot](screenshot.png "Screenshot")
 
+## Packer
 
+Installing packer
 
+```
+pacman -S wget
+cd ~/Downloads
+wget https://aur.archlinux.org/cgit/aur.git/snapshot/packer.tar.gz
+tar -xvf packer
+cd packer
+makepkg -sri
+```
 
 ## I3
 i3 configuration
@@ -13,11 +23,13 @@ i3 configuration
 Install necessary apps
 
 ```
-pacman -S i3 conky feh rxvt-unicode ttf-droid terminus-font perl-anyevent-i3 0.16-2 compton
+pacman -S i3 feh rxvt-unicode ttf-droid terminus-font perl-anyevent-i3 0.16-2 compton
 ```
 
+Install i3-gaps, dmenu2 and some fonts
+
 ```
-yaourt -S dmenu2 lemonbar powerline-fonts-git python-i3-git unclutter-xfixes-git
+packer -S i3-gaps-git dmenu2 powerline-fonts-git python-i3-git unclutter-xfixes-git
 ```
 
 ---
@@ -47,20 +59,21 @@ xset fp+ $HOME/.fonts/terminesspowerline
 fc-cache -vf
 ```
 
+## VIM and haskell
+
 Install vim plugins
 ```
 $ git clone https://github.com/gmarik/Vundle.git ~/.vim/bundle/Vundle.vim
 $ vim +PluginInstall +qall
 ```
 
-## VIM and haskell
 Install pathogen
 ```
-yaourt -S vim-pathogen
+packer -S vim-pathogen
 ```
 
 
-
+Install haskell plugins
 ```
 cd ~/.vim/bundle
 git clone https://github.com/eagletmt/ghcmod-vim.git
