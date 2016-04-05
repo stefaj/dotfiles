@@ -9,10 +9,10 @@ Dot Files - i3 config and vim
 Installing packer
 
 ```
-pacman -S wget
+sudo pacman -S wget
 cd ~/Downloads
 wget https://aur.archlinux.org/cgit/aur.git/snapshot/packer.tar.gz
-tar -xvf packer
+tar -xvf packer.tar.gz
 cd packer
 makepkg -sri
 ```
