@@ -1,0 +1,1 @@
+/home/stefan/git/i3config/.vim

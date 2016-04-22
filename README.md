@@ -24,7 +24,7 @@ i3 configuration
 Install necessary apps
 
 ```
-pacman -S i3 feh rxvt-unicode ttf-droid terminus-font perl-anyevent-i3 0.16-2 compton
+pacman -S i3 feh rxvt-unicode ttf-droid terminus-font compton
 ```
 
 Install i3-gaps, dmenu2 and some fonts
@@ -90,6 +90,7 @@ git clone https://github.com/godlygeek/tabular.git
 git clone https://github.com/ervandew/supertab.git
 git clone https://github.com/Shougo/neocomplete.vim.git
 git clone https://github.com/Shougo/vimproc.vim.git
+git clone https://github.com/kristijanhusak/vim-hybrid-material
 cd vimproc.vim
 make
 cabal install ghc-mod hlint
