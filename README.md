@@ -91,6 +91,8 @@ git clone https://github.com/ervandew/supertab.git
 git clone https://github.com/Shougo/neocomplete.vim.git
 git clone https://github.com/Shougo/vimproc.vim.git
 git clone https://github.com/kristijanhusak/vim-hybrid-material
+git clone https://github.com/vim-airline/vim-airline
+git clone https://github.com/vim-airline/vim-airline-themes
 cd vimproc.vim
 make
 cabal install ghc-mod hlint
