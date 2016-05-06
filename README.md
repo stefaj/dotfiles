@@ -24,13 +24,13 @@ i3 configuration
 Install necessary apps
 
 ```
-pacman -S i3 feh rxvt-unicode ttf-droid terminus-font compton
+pacman -S i3 feh rxvt-unicode ttf-droid terminus-font compton zsh-syntax-highlighting zsh
 ```
 
 Install i3-gaps, dmenu2 and some fonts
 
 ```
-packer -S i3-gaps-git dmenu2 powerline-fonts-git python-i3-git unclutter-xfixes-git
+packer -S i3-gaps-git dmenu2 powerline-fonts-git unclutter-xfixes-git
 ```
 
 ---
