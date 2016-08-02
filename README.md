@@ -19,9 +19,8 @@ yaourt -S dmenu2 lemonbar powerline-fonts-git python-i3-git unclutter-xfixes-git
 ## Installation notes
 
 `.Xresources` goes to `~/.Xresources`
-```
-xrdb -merge ~/.Xresources`
-```
+
+Make sure `xrdb -merge ~/.Xresources` is above `exec i3` in `~\.xinitrc`
 
 `.conkyrc` goes to `~/.conkyrc`
 
