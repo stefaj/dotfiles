@@ -40,7 +40,7 @@ packer -S i3-gaps-git dmenu2 powerline-fonts-git unclutter-xfixes-git
 
 `.Xresources` goes to `~/.Xresources`
 ```
-xrdb -merge ~/.Xresources`
+xrdb -merge ~/.Xresources
 ```
 
 `.conkyrc` goes to `~/.conkyrc`
