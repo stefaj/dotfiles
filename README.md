@@ -39,9 +39,13 @@ packer -S i3-gaps-git dmenu2 powerline-fonts-git unclutter-xfixes-git
 ### Installation notes
 
 `.Xresources` goes to `~/.Xresources`
+
 ```
 xrdb -merge ~/.Xresources
 ```
+
+Make sure `xrdb -merge ~/.Xresources` is above `exec i3` in `~\.xinitrc`
+
 
 `.conkyrc` goes to `~/.conkyrc`
 
