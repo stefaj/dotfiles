@@ -39,9 +39,13 @@ packer -S i3-gaps-git dmenu2 powerline-fonts-git unclutter-xfixes-git
 ### Installation notes
 
 `.Xresources` goes to `~/.Xresources`
+
 ```
-xrdb -merge ~/.Xresources`
+xrdb -merge ~/.Xresources
 ```
+
+Make sure `xrdb -merge ~/.Xresources` is above `exec i3` in `~/.xinitrc`
+
 
 `.conkyrc` goes to `~/.conkyrc`
 
@@ -62,23 +66,23 @@ fc-cache -vf
 
 ## VIM and haskell
 
-Install vim plugins
+Install plugin manager vundle:
 ```
 git clone https://github.com/gmarik/Vundle.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 ```
 
-Install pathogen
+Install pathogen (optional):
 ```
 packer -S vim-pathogen
 ```
 
-
-Install haskell plugins
+Install VIM themes and tools:
 ```
 cd ~/.vim/bundle
-git clone https://github.com/eagletmt/ghcmod-vim.git
-git clone https://github.com/eagletmt/neco-ghc
+git clone https://github.com/kristijanhusak/vim-hybrid-material
+git clone https://github.com/vim-airline/vim-airline
+git clone https://github.com/vim-airline/vim-airline-themes
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
 git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/tomtom/tlib_vim.git
@@ -90,10 +94,14 @@ git clone https://github.com/godlygeek/tabular.git
 git clone https://github.com/ervandew/supertab.git
 git clone https://github.com/Shougo/neocomplete.vim.git
 git clone https://github.com/Shougo/vimproc.vim.git
-git clone https://github.com/kristijanhusak/vim-hybrid-material
-git clone https://github.com/vim-airline/vim-airline
-git clone https://github.com/vim-airline/vim-airline-themes
 cd vimproc.vim
 make
+```
+
+Install haskell plugins:
+```
+cd ~/.vim/bundle
+git clone https://github.com/eagletmt/ghcmod-vim.git
+git clone https://github.com/eagletmt/neco-ghc
 cabal install ghc-mod hlint
 ```
