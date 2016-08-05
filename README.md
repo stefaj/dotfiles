@@ -4,6 +4,28 @@ Dot Files - i3 config and vim
 *Preview:*
 ![Screenshot](screenshot.png "Screenshot")
 
+
+## Installing
+When cloning this repository, do:
+```
+git clone https://github.com/stefan-j/dotfiles --recursive
+```
+in order to pull the vim plugin git submodules.
+
+There is an install script one can use, that creates symlinks to the files in this repo.
+```
+./install.sh
+```
+If you are on **Arch Linux**, then prior to the above do:
+```
+./arch.sh
+```
+in order to install the required packages.
+
+
+If you are on **NixOs**, then see this [repo](https://github.com/stefan-j/NixOs) for the required packages.
+
+
 ## Packer
 
 Installing packer
@@ -65,6 +87,7 @@ fc-cache -vf
 ```
 
 ## VIM and haskell
+*Only if you did not pull the submodules with* `--recursive`, see note at end.
 
 Install plugin manager vundle:
 ```
@@ -105,3 +128,11 @@ git clone https://github.com/eagletmt/ghcmod-vim.git
 git clone https://github.com/eagletmt/neco-ghc
 cabal install ghc-mod hlint
 ```
+
+**NOTE:**
+
+If you did
+```
+git clone https://github.com/stefan-j/dotfiles --recursive
+```
+and you symlinked the `.vim` directory (or used `./install.sh`) then you don't need to do the above, as the directory already contains the vim plugins as git submodules. 
