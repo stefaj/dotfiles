@@ -64,8 +64,8 @@ fc-cache -vf
 
 Install vim plugins
 ```
-$ git clone https://github.com/gmarik/Vundle.git ~/.vim/bundle/Vundle.vim
-$ vim +PluginInstall +qall
+git clone https://github.com/gmarik/Vundle.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 ```
 
 Install pathogen

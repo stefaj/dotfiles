@@ -11,7 +11,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/stefan/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='ls --color=auto'
 
