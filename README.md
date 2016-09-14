@@ -4,6 +4,45 @@ Dot Files - i3 config and vim
 *Preview:*
 ![Screenshot](screenshot.png "Screenshot")
 
+
+## Installing
+When cloning this repository, do:
+```
+git clone https://github.com/stefan-j/dotfiles --recursive
+```
+in order to pull the vim plugin git submodules.
+
+There is an install script one can use, that creates symlinks to the files in this repo.
+```
+./install.sh
+```
+If you are on **Arch Linux**, then prior to the above do:
+```
+./arch.sh
+```
+in order to install the required packages.
+
+
+If you are on **NixOs**, then see this [repo](https://github.com/stefan-j/NixOs) for the required packages.
+
+The install script `./install.sh` creates symlinks for the various dot files contained in this repository, for example, it symlinks `~./vim` to `./vim` contained within.
+
+## Requirements
+The requirements will be automatically installed on Arch Linux with `./install.sh`. If you are on a different distribution, you will require the following packages.
+
+* I3 with gaps - [Mandatory github repo link](https://github.com/Airblader/i3)
+* VIM
+* Terminus font
+* Compton
+* Z-shell
+* FEH
+* ALSA utils (keybindings in i3 config uses this to adjust volume)
+* Dmenu2 - [on Bitbucket](https://bitbucket.org/melek/dmenu2)
+* Powerline fonts
+
+## Manual Mode (Arch)
+If don't get enough dopamine flowing by running a simple install script you can manually install the required packages with the following steps:
+
 ## Packer
 
 Installing packer
@@ -19,7 +58,7 @@ makepkg -sri
 
 ## I3
 i3 configuration
-### Install script
+### Install
 
 Install necessary apps
 
@@ -65,6 +104,7 @@ fc-cache -vf
 ```
 
 ## VIM and haskell
+*Only if you did not pull the submodules with* `--recursive`, see note at end.
 
 Install plugin manager vundle:
 ```
@@ -105,3 +145,11 @@ git clone https://github.com/eagletmt/ghcmod-vim.git
 git clone https://github.com/eagletmt/neco-ghc
 cabal install ghc-mod hlint
 ```
+
+**NOTE:**
+
+If you did
+```
+git clone https://github.com/stefan-j/dotfiles --recursive
+```
+and you symlinked the `.vim` directory (or used `./install.sh`) then you don't need to do the above, as the directory already contains the vim plugins as git submodules. 
