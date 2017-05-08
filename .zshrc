@@ -17,6 +17,7 @@ alias ls='ls --color=auto'
 
 alias cghc='cabal exec -- ghc'
 alias cghci='cabal exec -- ghci'
+alias shell='nix-shell -I nixpkgs=/home/stefan/git/nixpkgs/default.nix'
 
 autoload -U promptinit
 promptinit
@@ -64,3 +65,8 @@ bindkey "\e[H" beginning-of-line
 bindkey "\e[F" end-of-line
 # # completion in the middle of a line
 bindkey '^i' expand-or-complete-prefix
+
+export GOPATH=/home/stefan/go
+export PATH=$PATH:$GOPATH/bin
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
