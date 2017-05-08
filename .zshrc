@@ -11,7 +11,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/stefan/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='ls --color=auto'
 
@@ -26,18 +26,6 @@ prompt walters
 zstyle ':completion:*' rehash true
 
 bindkey -v
-
-
-
-
-function zle-line-init zle-keymap-select {
-    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
-        RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
-            zle reset-prompt
-          }
-
-zle -N zle-line-init
-zle -N zle-keymap-select
 
 
 # key bindings
@@ -70,3 +58,5 @@ export GOPATH=/home/stefan/go
 export PATH=$PATH:$GOPATH/bin
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+unset SSH_ASKPASS
