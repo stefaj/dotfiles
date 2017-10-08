@@ -1,5 +1,5 @@
-URxvt*font: xft:terminus:pixelsize=16
-URxvt*boldFont: xft:terminus:bold:pixelsize=16
+URxvt*font: xft:xos4 Terminus:pixelsize=16
+URxvt*boldFont: xft:xos4 Terminus:bold:pixelsize=16
 URxvt*.transparent: 	true
 URxvt*.shading: 	20
 URxvt*.buffered:	true
