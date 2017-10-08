@@ -5,7 +5,6 @@ set nocompatible
 set number
 set nowrap
 set showmode
-set tw=80
 set smartcase
 set smarttab
 set smartindent
@@ -16,7 +15,9 @@ set expandtab
 set incsearch
 set mouse=v
 set history=1000
+" set clipboard=unnamed,autoselect
 set clipboard=unnamedplus,autoselect
+set pastetoggle=<F2>
 
 set completeopt=menuone,menu,longest
 
@@ -74,3 +75,4 @@ let g:airline_theme = "hybrid"
 let g:hybrid_custom_term_colors = 1
 let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
 let g:airline#extensions#tabline#enabled = 1
+
