@@ -1,9 +1,7 @@
-# i3config
-i3 configuration for arch linux
 
-## Install script
+# i3 configuration for arch linux
 
-Install necessary dependencies on arch linux
+## Install dependencies
 
 ```
 pacman -S i3-gaps dmenu feh rxvt-unicode ttf-droid ttf-hack git gcc
