@@ -6,7 +6,7 @@ i3 configuration
 Install necessary apps
 
 ```
-pacman -S i3-gaps dmenu feh rxvt-unicode ttf-droid gcc
+pacman -S i3-gaps dmenu feh rxvt-unicode ttf-droid gcc ttf-hack git
 ```
 ---
 
