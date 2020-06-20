@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dot Files
 Dot Files - i3 config and vim
 
@@ -59,10 +60,15 @@ makepkg -sri
 ## I3
 i3 configuration
 ### Install
+=======
 
-Install necessary apps
+# i3 configuration for arch linux
+>>>>>>> d93852b2fec297d61faf131af975bda7acd79843
+
+## Install dependencies
 
 ```
+<<<<<<< HEAD
 pacman -S i3 feh rxvt-unicode ttf-droid terminus-font compton zsh-syntax-highlighting zsh
 ```
 
@@ -76,6 +82,12 @@ packer -S i3-gaps-git dmenu2 powerline-fonts-git unclutter-xfixes-git
 
 
 ### Installation notes
+=======
+pacman -S i3-gaps dmenu feh rxvt-unicode ttf-droid ttf-hack git gcc
+```
+
+## Installation notes
+>>>>>>> d93852b2fec297d61faf131af975bda7acd79843
 
 `.Xresources` goes to `~/.Xresources`
 
@@ -86,13 +98,9 @@ xrdb -merge ~/.Xresources
 Make sure `xrdb -merge ~/.Xresources` is above `exec i3` in `~/.xinitrc`
 
 
-`.conkyrc` goes to `~/.conkyrc`
+`.i3/config` goes to `~/.i3/config`
 
-`config` goes to `~/.i3/config`
-
-`zixpk.jpg` can go to the home directory `~/zixpk.jpg`
-Just update the path as necessary in `~/.i3/config`
-
+<<<<<<< HEAD
 
 Copy the .fonts to ~/.fonts/
 then 
@@ -116,6 +124,9 @@ Install pathogen (optional):
 ```
 packer -S vim-pathogen
 ```
+=======
+`wallpaper.jpg` of your choice goes to `~/wallpaper.jpg`
+>>>>>>> d93852b2fec297d61faf131af975bda7acd79843
 
 Install VIM themes and tools:
 ```
