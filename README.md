@@ -15,7 +15,7 @@ pacman -S i3-gaps dmenu feh rxvt-unicode ttf-droid ttf-hack git gcc
 
 Make sure `xrdb -merge ~/.Xresources` is above `exec i3` in `~\.xinitrc`
 
-`config` goes to `~/.i3/config`
+`.i3/config` goes to `~/.i3/config`
 
 `wallpaper.jpg` of your choice goes to `~/wallpaper.jpg`
 
