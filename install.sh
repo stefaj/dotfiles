@@ -5,6 +5,8 @@
 
 
 mkdir ~/.i3/
+mkdir -p ~/.config
+ln -s "$PWD/.config/dunst" ~/.config/dunst
 ln -s "$PWD/config" ~/.i3/config
 ln -s "$PWD/wallpaper.jpg" ~/wallpaper.jpg
 ln -s "$PWD/.vimrc" ~/.vimrc

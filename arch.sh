@@ -4,6 +4,7 @@ cd ~
 mkdir ~/tmp44
 cd tmp44
 sudo pacman -S wget
+sudo pacman -S dunst
 cd ~/Downloads
 wget https://aur.archlinux.org/cgit/aur.git/snapshot/packer.tar.gz
 tar -xvf packer.tar.gz
