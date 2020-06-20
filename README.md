@@ -1,15 +1,13 @@
 # i3config
-i3 configuration
+i3 configuration for arch linux
 
 ## Install script
 
-Install necessary apps
+Install necessary dependencies on arch linux
 
 ```
-pacman -S i3-gaps dmenu feh rxvt-unicode ttf-droid gcc ttf-hack git
+pacman -S i3-gaps dmenu feh rxvt-unicode ttf-droid ttf-hack git gcc
 ```
----
-
 
 ## Installation notes
 
@@ -18,4 +16,5 @@ pacman -S i3-gaps dmenu feh rxvt-unicode ttf-droid gcc ttf-hack git
 Make sure `xrdb -merge ~/.Xresources` is above `exec i3` in `~\.xinitrc`
 
 `config` goes to `~/.i3/config`
+`wallpaper.jpg` of your choice goes to `~/wallpaper.jpg`
 
