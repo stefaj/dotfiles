@@ -22,17 +22,14 @@ font pango:droid sans 10
 
 
 client.focused          #000000 #007fff #000000 #000000
-#client.focused #000000 #000000 #FFFFFF
-#client.focused                #1793D0    #1793D0    #FFFFFF
-#client.focused_inactive    #333333    #333333    #999999
 #client.unfocused            #333333    #333333    #999999
 #client.urgent                #FF0000    #8C5665    #FF0000
 #bar.focused                    #1793D0    #1793D0    #FFFFFF
 #bar.unfocused                #333333    #333333    #999999
 #bar.urgent                    #FF0000    #000000    #FF0000
 #client.focused          #ea2263 #e70a53 #ffffff #db709b
-client.focused_inactive #565656 #444444 #ffffff #666666
-client.unfocused        #373737 #222222 #888888 #444444
+client.focused_inactive #000000 #000000 #ffffff #666666
+client.unfocused        #000000 #000000 #888888 #444444
 client.urgent           #ec7ea4 #eb709b #ffffff #eb709b
 
 # ISO 10646 = Unicode (use xfontsel)
@@ -62,10 +59,6 @@ bindsym $mod+Shift+q kill
 # installed.
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-bindsym $mod+Shift+a exec urxvt -name ranger -e ranger
-
-bindsym --release Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures/Screenshots/'
-
 # music
 bindsym $mod+KP_8 exec mpc play
 bindsym $mod+KP_5 exec mpc pause
@@ -74,11 +67,17 @@ bindsym $mod+KP_4 exec mpc prev
 bindsym $mod+KP_Add exec amixer set Master 5%+
 bindsym $mod+KP_Subtract exec amixer set Master 5%- 
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+# alternatively, you can use the cursor keys:
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -86,20 +85,15 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+g split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -119,36 +113,36 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+y focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+t focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1:main
-bindsym $mod+2 workspace 2:www
-bindsym $mod+3 workspace 3:console
-bindsym $mod+4 workspace 4:code
-bindsym $mod+5 workspace 5:ent
-bindsym $mod+6 workspace 6:chat
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10:
+bindsym $mod+1 workspace 1:α
+bindsym $mod+2 workspace 2:β
+bindsym $mod+3 workspace 3:γ
+bindsym $mod+4 workspace 4:δ
+bindsym $mod+5 workspace 5:ε
+bindsym $mod+6 workspace 6:ζ
+bindsym $mod+7 workspace 7:η
+bindsym $mod+8 workspace 8:π
+bindsym $mod+9 workspace 9:λ
+bindsym $mod+0 workspace 0:μ
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1:main
-bindsym $mod+Shift+2 move container to workspace 2:www
-bindsym $mod+Shift+3 move container to workspace 3:console
-bindsym $mod+Shift+4 move container to workspace 4:code
-bindsym $mod+Shift+5 move container to workspace 5:ent
-bindsym $mod+Shift+6 move container to workspace 6:chat
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+1 move container to workspace 1:α
+bindsym $mod+Shift+2 move container to workspace 2:β
+bindsym $mod+Shift+3 move container to workspace 3:γ
+bindsym $mod+Shift+4 move container to workspace 4:δ
+bindsym $mod+Shift+5 move container to workspace 5:ε
+bindsym $mod+Shift+6 move container to workspace 6:ζ
+bindsym $mod+Shift+7 move container to workspace 7:η
+bindsym $mod+Shift+8 move container to workspace 8:π
+bindsym $mod+Shift+9 move container to workspace 9:λ
+bindsym $mod+Shift+0 move container to workspace 0:μ
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -188,39 +182,34 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 bar {
-#	height 20
-	i3bar_command /home/stefan/.i3/lemonbar/i3_lemonbar.sh
-#	i3bar_command i3bar -t
-#	status_command $HOME/bin/conky-i3bar
-        position top
+	height 20
+	i3bar_command i3bar -t
+	status_command i3status
+        strip_workspace_numbers yes
+        position bottom
         colors {
             # <bar>
-            background #00222222
+            background #00000000
             separator  #d70a53
             statusline #999999
 
             # <workclass>       <border> <bg> <text>
-            focused_workspace   #118fff #007fff #ffffff
-            active_workspace    #565656 #444444 #ffffff
-            inactive_workspace  #373737 #222222 #888888
+            focused_workspace   #000000 #000000 #007fff
+            active_workspace    #000000 #000000 #ffffff
+            inactive_workspace  #000000 #000000 #FFFFFF
             urgent_workspace    #ec7ea4 #eb709b #ffffff
         }
 
 }
 
-# assign [class="Steam"] 5:ent
-assign [class="Google-chrome-stable"] 2:www
 
-exec --no-startup-id feh --bg-scale ~/Yosemite-Color-Block.png
-#exec --no-startup-id i3-msg 'workspace 2:www; exec google-chrome-stable'
-exec --no-startup-id i3-msg 'workspace 3:console; exec urxvt'
-# exec --no-startup-id i3-msg 'workspace 5:ent; exec steam'
-exec --no-startup-id i3-msg 'workspace 1:main'
+exec --no-startup-id feh --bg-scale ~/wallpaper.jpg
+exec --no-startup-id i3-msg 'workspace 1:α'
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 gaps inner 10
 gaps outer 20
 smart_gaps on
 smart_borders on
-new_window pixel 2
+#new_window pixel 5
 
