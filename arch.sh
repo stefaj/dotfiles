@@ -11,7 +11,6 @@ cd packer
 makepkg -sri
 # Cabal
 echo "Installing cabal"
-sudo pacman -S cabal-install
 # i3 and urxvt and zsh
 echo "Installing a kickass terminal"
 sudo pacman -S i3 feh rxvt-unicode ttf-droid terminus-font compton zsh-syntax-highlighting zsh
@@ -44,10 +43,3 @@ git clone https://github.com/Shougo/neocomplete.vim.git
 git clone https://github.com/Shougo/vimproc.vim.git
 cd vimproc.vim
 make
-# Haskell vim
-cd ~/.vim/bundle
-git clone https://github.com/eagletmt/ghcmod-vim.git
-git clone https://github.com/eagletmt/neco-ghc
-cabal install ghc-mod hlint
-# Delete tmp
-rm -rf ~/tmp44
