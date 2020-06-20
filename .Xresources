@@ -1,5 +1,6 @@
-URxvt*font: xft:xos4 Terminus:pixelsize=16
-URxvt*boldFont: xft:xos4 Terminus:bold:pixelsize=16
+URxvt*font: xft:hack:pixelsize=16
+URxvt*boldFont: xft:hack:bold:pixelsize=16
+
 URxvt*.transparent: 	true
 URxvt*.shading: 	20
 URxvt*.buffered:	true
@@ -7,7 +8,6 @@ URxvt*.scrollBar:	false
 URxvt*.inheritPixmap:	true
 URxvt*.cursorBlink:	true
 
-!TomorrowNight
 #define t_background        #1d1f21
 #define t_current_line      #282a2e
 #define t_selection      	#373b41
