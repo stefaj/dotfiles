@@ -78,7 +78,6 @@ packer -S i3-gaps-git dmenu2 powerline-fonts-git unclutter-xfixes-git
 
 
 ### Installation notes
-=======
 pacman -S i3-gaps dmenu feh rxvt-unicode ttf-droid ttf-hack git gcc
 ```
 
@@ -118,7 +117,6 @@ Install pathogen (optional):
 ```
 packer -S vim-pathogen
 ```
-=======
 `wallpaper.jpg` of your choice goes to `~/wallpaper.jpg`
 
 Install VIM themes and tools:
