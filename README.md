@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Dot Files
 Dot Files - i3 config and vim
 
@@ -60,15 +59,12 @@ makepkg -sri
 ## I3
 i3 configuration
 ### Install
-=======
 
 # i3 configuration for arch linux
->>>>>>> d93852b2fec297d61faf131af975bda7acd79843
 
 ## Install dependencies
 
 ```
-<<<<<<< HEAD
 pacman -S i3 feh rxvt-unicode ttf-droid terminus-font compton zsh-syntax-highlighting zsh
 ```
 
@@ -87,7 +83,6 @@ pacman -S i3-gaps dmenu feh rxvt-unicode ttf-droid ttf-hack git gcc
 ```
 
 ## Installation notes
->>>>>>> d93852b2fec297d61faf131af975bda7acd79843
 
 `.Xresources` goes to `~/.Xresources`
 
@@ -100,7 +95,6 @@ Make sure `xrdb -merge ~/.Xresources` is above `exec i3` in `~/.xinitrc`
 
 `.i3/config` goes to `~/.i3/config`
 
-<<<<<<< HEAD
 
 Copy the .fonts to ~/.fonts/
 then 
@@ -126,7 +120,6 @@ packer -S vim-pathogen
 ```
 =======
 `wallpaper.jpg` of your choice goes to `~/wallpaper.jpg`
->>>>>>> d93852b2fec297d61faf131af975bda7acd79843
 
 Install VIM themes and tools:
 ```
